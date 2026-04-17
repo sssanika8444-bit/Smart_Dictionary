@@ -1,0 +1,32 @@
+# ──────────────────────────────────────────────────────────────
+# Smart Offline Dictionary – Python Dependencies
+# Install with: pip install -r requirements.txt
+# ──────────────────────────────────────────────────────────────
+
+# NLTK – Natural Language Toolkit (WordNet synonyms/antonyms)
+nltk>=3.8
+
+# Text-to-Speech (fully offline)
+pyttsx3>=2.90
+
+# Speech Recognition (voice input)
+SpeechRecognition>=3.10
+
+# PyAudio – required by SpeechRecognition for microphone access
+# Windows  : pip install pyaudio
+# macOS    : brew install portaudio && pip install pyaudio
+# Linux    : sudo apt install portaudio19-dev && pip install pyaudio
+pyaudio>=0.2.13
+
+# ──────────────────────────────────────────────────────────────
+# OPTIONAL: Fully offline speech recognition (no internet needed)
+# Uncomment and install if you want Sphinx fallback:
+# pocketsphinx>=5.0
+# ──────────────────────────────────────────────────────────────
+
+# Standard library modules used (no install needed):
+# tkinter  – GUI  (built into Python)
+# sqlite3  – DB   (built into Python)
+# difflib  – word suggestions (built into Python)
+# json     – dictionary file (built into Python)
+# threading, random, os – (built into Python)
